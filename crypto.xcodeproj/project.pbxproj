@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		CE8CD7192AA5B01D008EEA75 /* cryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7182AA5B01D008EEA75 /* cryptoApp.swift */; };
-		CE8CD71B2AA5B01D008EEA75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD71A2AA5B01D008EEA75 /* ContentView.swift */; };
 		CE8CD71D2AA5B01D008EEA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8CD71C2AA5B01D008EEA75 /* Assets.xcassets */; };
 		CE8CD7212AA5B01D008EEA75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8CD7202AA5B01D008EEA75 /* Preview Assets.xcassets */; };
 		CE8CD72B2AA5B01E008EEA75 /* cryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD72A2AA5B01E008EEA75 /* cryptoTests.swift */; };
 		CE8CD7352AA5B01E008EEA75 /* cryptoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7342AA5B01E008EEA75 /* cryptoUITests.swift */; };
 		CE8CD7372AA5B01E008EEA75 /* cryptoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7362AA5B01E008EEA75 /* cryptoUITestsLaunchTests.swift */; };
+		CE8CD7462AA5B066008EEA75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7442AA5B066008EEA75 /* ContentView.swift */; };
+		CE8CD7552AA5B17B008EEA75 /* ExchangeInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7512AA5B17B008EEA75 /* ExchangeInfoResponse.swift */; };
+		CE8CD7562AA5B17B008EEA75 /* BinanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7522AA5B17B008EEA75 /* BinanceManager.swift */; };
+		CE8CD7572AA5B17B008EEA75 /* AveragePriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7532AA5B17B008EEA75 /* AveragePriceResponse.swift */; };
+		CE8CD7582AA5B17B008EEA75 /* BinanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7542AA5B17B008EEA75 /* BinanceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		CE8CD7152AA5B01D008EEA75 /* crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8CD7182AA5B01D008EEA75 /* cryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoApp.swift; sourceTree = "<group>"; };
-		CE8CD71A2AA5B01D008EEA75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE8CD71C2AA5B01D008EEA75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8CD71E2AA5B01D008EEA75 /* crypto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = crypto.entitlements; sourceTree = "<group>"; };
 		CE8CD7202AA5B01D008EEA75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +48,11 @@
 		CE8CD7302AA5B01E008EEA75 /* cryptoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8CD7342AA5B01E008EEA75 /* cryptoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoUITests.swift; sourceTree = "<group>"; };
 		CE8CD7362AA5B01E008EEA75 /* cryptoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE8CD7442AA5B066008EEA75 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
+		CE8CD7512AA5B17B008EEA75 /* ExchangeInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeInfoResponse.swift; sourceTree = "<group>"; };
+		CE8CD7522AA5B17B008EEA75 /* BinanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinanceManager.swift; sourceTree = "<group>"; };
+		CE8CD7532AA5B17B008EEA75 /* AveragePriceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AveragePriceResponse.swift; sourceTree = "<group>"; };
+		CE8CD7542AA5B17B008EEA75 /* BinanceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinanceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,9 @@
 		CE8CD7172AA5B01D008EEA75 /* crypto */ = {
 			isa = PBXGroup;
 			children = (
+				CE8CD7502AA5B156008EEA75 /* binance */,
 				CE8CD7182AA5B01D008EEA75 /* cryptoApp.swift */,
-				CE8CD71A2AA5B01D008EEA75 /* ContentView.swift */,
+				CE8CD7442AA5B066008EEA75 /* ContentView.swift */,
 				CE8CD71C2AA5B01D008EEA75 /* Assets.xcassets */,
 				CE8CD71E2AA5B01D008EEA75 /* crypto.entitlements */,
 				CE8CD71F2AA5B01D008EEA75 /* Preview Content */,
@@ -127,6 +136,17 @@
 				CE8CD7362AA5B01E008EEA75 /* cryptoUITestsLaunchTests.swift */,
 			);
 			path = cryptoUITests;
+			sourceTree = "<group>";
+		};
+		CE8CD7502AA5B156008EEA75 /* binance */ = {
+			isa = PBXGroup;
+			children = (
+				CE8CD7532AA5B17B008EEA75 /* AveragePriceResponse.swift */,
+				CE8CD7522AA5B17B008EEA75 /* BinanceManager.swift */,
+				CE8CD7542AA5B17B008EEA75 /* BinanceViewModel.swift */,
+				CE8CD7512AA5B17B008EEA75 /* ExchangeInfoResponse.swift */,
+			);
+			path = binance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8CD71B2AA5B01D008EEA75 /* ContentView.swift in Sources */,
 				CE8CD7192AA5B01D008EEA75 /* cryptoApp.swift in Sources */,
+				CE8CD7552AA5B17B008EEA75 /* ExchangeInfoResponse.swift in Sources */,
+				CE8CD7562AA5B17B008EEA75 /* BinanceManager.swift in Sources */,
+				CE8CD7582AA5B17B008EEA75 /* BinanceViewModel.swift in Sources */,
+				CE8CD7572AA5B17B008EEA75 /* AveragePriceResponse.swift in Sources */,
+				CE8CD7462AA5B066008EEA75 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
