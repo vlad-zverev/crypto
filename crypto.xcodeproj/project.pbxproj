@@ -15,7 +15,7 @@
 		CE8CD7372AA5B01E008EEA75 /* cryptoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7362AA5B01E008EEA75 /* cryptoUITestsLaunchTests.swift */; };
 		CE8CD7462AA5B066008EEA75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7442AA5B066008EEA75 /* ContentView.swift */; };
 		CE8CD7552AA5B17B008EEA75 /* ExchangeInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7512AA5B17B008EEA75 /* ExchangeInfoResponse.swift */; };
-		CE8CD7562AA5B17B008EEA75 /* BinanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7522AA5B17B008EEA75 /* BinanceManager.swift */; };
+		CE8CD7562AA5B17B008EEA75 /* BinanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7522AA5B17B008EEA75 /* BinanceService.swift */; };
 		CE8CD7572AA5B17B008EEA75 /* AveragePriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7532AA5B17B008EEA75 /* AveragePriceResponse.swift */; };
 		CE8CD7582AA5B17B008EEA75 /* BinanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8CD7542AA5B17B008EEA75 /* BinanceViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -50,7 +50,7 @@
 		CE8CD7362AA5B01E008EEA75 /* cryptoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE8CD7442AA5B066008EEA75 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE8CD7512AA5B17B008EEA75 /* ExchangeInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeInfoResponse.swift; sourceTree = "<group>"; };
-		CE8CD7522AA5B17B008EEA75 /* BinanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinanceManager.swift; sourceTree = "<group>"; };
+		CE8CD7522AA5B17B008EEA75 /* BinanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinanceService.swift; sourceTree = "<group>"; };
 		CE8CD7532AA5B17B008EEA75 /* AveragePriceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AveragePriceResponse.swift; sourceTree = "<group>"; };
 		CE8CD7542AA5B17B008EEA75 /* BinanceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinanceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,13 +140,21 @@
 		CE8CD7502AA5B156008EEA75 /* binance */ = {
 			isa = PBXGroup;
 			children = (
+				CE8CD7592AA5B481008EEA75 /* ResponseModel */,
 				CE8CD7442AA5B066008EEA75 /* ContentView.swift */,
-				CE8CD7532AA5B17B008EEA75 /* AveragePriceResponse.swift */,
-				CE8CD7522AA5B17B008EEA75 /* BinanceManager.swift */,
+				CE8CD7522AA5B17B008EEA75 /* BinanceService.swift */,
 				CE8CD7542AA5B17B008EEA75 /* BinanceViewModel.swift */,
-				CE8CD7512AA5B17B008EEA75 /* ExchangeInfoResponse.swift */,
 			);
 			path = binance;
+			sourceTree = "<group>";
+		};
+		CE8CD7592AA5B481008EEA75 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE8CD7532AA5B17B008EEA75 /* AveragePriceResponse.swift */,
+				CE8CD7512AA5B17B008EEA75 /* ExchangeInfoResponse.swift */,
+			);
+			path = ResponseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +289,7 @@
 			files = (
 				CE8CD7192AA5B01D008EEA75 /* cryptoApp.swift in Sources */,
 				CE8CD7552AA5B17B008EEA75 /* ExchangeInfoResponse.swift in Sources */,
-				CE8CD7562AA5B17B008EEA75 /* BinanceManager.swift in Sources */,
+				CE8CD7562AA5B17B008EEA75 /* BinanceService.swift in Sources */,
 				CE8CD7582AA5B17B008EEA75 /* BinanceViewModel.swift in Sources */,
 				CE8CD7572AA5B17B008EEA75 /* AveragePriceResponse.swift in Sources */,
 				CE8CD7462AA5B066008EEA75 /* ContentView.swift in Sources */,
