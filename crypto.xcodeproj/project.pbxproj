@@ -48,7 +48,7 @@
 		CE8CD7302AA5B01E008EEA75 /* cryptoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8CD7342AA5B01E008EEA75 /* cryptoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoUITests.swift; sourceTree = "<group>"; };
 		CE8CD7362AA5B01E008EEA75 /* cryptoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CE8CD7442AA5B066008EEA75 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
+		CE8CD7442AA5B066008EEA75 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE8CD7512AA5B17B008EEA75 /* ExchangeInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeInfoResponse.swift; sourceTree = "<group>"; };
 		CE8CD7522AA5B17B008EEA75 /* BinanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinanceManager.swift; sourceTree = "<group>"; };
 		CE8CD7532AA5B17B008EEA75 /* AveragePriceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AveragePriceResponse.swift; sourceTree = "<group>"; };
@@ -105,7 +105,6 @@
 			children = (
 				CE8CD7502AA5B156008EEA75 /* binance */,
 				CE8CD7182AA5B01D008EEA75 /* cryptoApp.swift */,
-				CE8CD7442AA5B066008EEA75 /* ContentView.swift */,
 				CE8CD71C2AA5B01D008EEA75 /* Assets.xcassets */,
 				CE8CD71E2AA5B01D008EEA75 /* crypto.entitlements */,
 				CE8CD71F2AA5B01D008EEA75 /* Preview Content */,
@@ -141,6 +140,7 @@
 		CE8CD7502AA5B156008EEA75 /* binance */ = {
 			isa = PBXGroup;
 			children = (
+				CE8CD7442AA5B066008EEA75 /* ContentView.swift */,
 				CE8CD7532AA5B17B008EEA75 /* AveragePriceResponse.swift */,
 				CE8CD7522AA5B17B008EEA75 /* BinanceManager.swift */,
 				CE8CD7542AA5B17B008EEA75 /* BinanceViewModel.swift */,
